@@ -1,0 +1,85 @@
+---
+name: Jun-I Wu
+position: "Regulatory Affairs Specialist"
+aboutme: Regulatory affairs specialist for medical devices including IVD and IVD data analysis
+address: "Zhubei City, Hsinchu County, Taiwan"
+#phone: 
+email: "jimewu@gmail.com"
+github: jimewu/ivd-ep-toolkit-2021
+linkedin: jimewu
+#headcolor: 414141
+headcolor: CB4042
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    latex_engine: "xelatex"
+    includes:
+        in_header: toolkit/preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    warning = FALSE,
+    message = FALSE
+)
+```
+
+```{r load_pkg, include=FALSE}
+pkg_lst <- c(
+    "knitr",
+    "dplyr",
+    "glue",
+    "readr",
+    "scales"
+)
+
+lapply(pkg_lst, function(pkg) {
+    if (system.file(package = pkg) == "") install.packages(pkg)
+})
+
+lapply(
+    pkg_lst,
+    library,
+    character.only = TRUE
+)
+```
+
+# Experience
+**<span style="font-size:1em;">AlfaBeta CRO Ltd.</span>** \hfill _Zhubei City, Taiwan_  
+Regulatory Affairs Specialist \hfill _Jan. 2020 - Present_  
+
+- Provide lectures of IVD pre-clinical tests (CLSI ep5, 6, 7, 9, 17, 25)
+
+- IVD pre-clinical test planning, *[data analysis using R](https://github.com/jimewu/ivd-ep-toolkit-2021)*, and report (ELISA, strip, molecular test and analyzer)
+
+- FDA Q-submission (Oral Cancer IVD and IVD for chronic kidney disease), Registration of Class I device (Spectrophotometer), EUA sbumission (Ventilator)
+
+- TFDA QSD translation and submission (Electrosurgical cutting and coagulation device), device registration (Manual surgical instruments)
+
+- EU Clinical evaluation report writing including LSR (Blood pressure measuring system, Extra-oral source X-ray System, Medical displays, thermometers, contact lenses, Intermittent pneumatic compression device and sequential compression device), self-declaration of conformity of general IVD (Spectrophotometer)
+
+- Clinical trial planning, submission, and GCP activities and documentation (retrospective for oral cancer IVD, prospective for mobile X-ray system)
+
+**<span style="font-size:1em;">China Medical University Hospital</span>** \hfill _Zhunan County, Taiwan_  
+IVD Biomarker Project Research Associate \hfill _Jan. 2017 - 2018_  
+
+- Discovery and validation of blood biomarker for earlier stage lung cancer
+
+# Publications
+
+- Lin, Yi-Pei, **Jun-I. Wu**, Chien-Wei Tseng, Huei-Jane Chen, and Lu-Hai Wang. 2019. “Gjb4 Serves as a Novel Biomarker for Lung Cancer and Promotes Metastasis and Chemoresistance via Src Activation.” Oncogene 38 (6): 822–37.
+
+- **Wu, Jun-I**, Yi-Pei Lin, Chien-Wei Tseng, Hui-Jane Chen, and Lu-Hai Wang. 2019. “Crabp2 Promotes Metastasis of Lung Cancer Cells via HuR and Integrin Β1/FAK/ERK Signaling.” Scientific Reports 9 (1): 845. 
+ 
+# Education
+
+**<span style="font-size:1em;">National Central University</span>** \hfill _Chungli County, Taiwan_  
+Ph.D. in Molecular Medicine \hfill _2019_
+
+**<span style="font-size:1em;">National Cheng Kung University</span>** \hfill _Tainan City, Taiwan_  
+MS. in Biochemistry and Molecular Biology \hfill _2008_
+
+# Certificate and Skills
+
+TOEIC (955), IVD preclinical data analysis (R), parametized reproducible report making (RMarkdown & officeverse), bash. Adept user of Linux.
